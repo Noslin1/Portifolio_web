@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Endereçamento | Nilson Santos</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Estilos específicos para a página do projeto */
+    .project-header {
+      padding-top: 150px;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .project-hero-img {
+      width: 100%;
+      border-radius: 20px;
+      margin-bottom: 40px;
+      box-shadow: var(--glass-shadow);
+      border: 1px solid var(--glass-border);
+    }
+    .project-body {
+      padding: 40px;
+      font-size: 1.15rem;
+      line-height: 1.8;
+      color: var(--text-muted);
+    }
+    .project-body h3 {
+      color: var(--text-main);
+      font-size: 1.8rem;
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+    .project-body ul {
+      list-style: disc inside;
+      margin-bottom: 20px;
+      margin-left: 20px;
+    }
+    .back-btn {
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Background Blobs -->
+  <div class="bg-shape shape-1"></div>
+  <div class="bg-shape shape-2"></div>
+
+  <header class="header">
+    <div class="header-container">
+      <a href="index.html" class="logo">NS<span>.</span></a>
+      <div class="header-actions">
+        <a href="index.html" class="btn btn-outline" style="padding: 8px 16px; font-size: 0.9rem;">
+          <i class="fa-solid fa-arrow-left"></i> Voltar
+        </a>
+        <button id="theme-toggle" class="theme-btn" aria-label="Alternar tema">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section project-detail reveal">
+      <div class="project-header">
+        <div class="projeto-tags" style="justify-content: center; margin-bottom: 20px;">
+          <span class="tag">Sistema</span>
+          <span class="tag">Logística</span>
+          <span class="tag">Python</span>
+          <span class="tag">SQL</span>
+        </div>
+        <h1 class="section-title">Sistema de Endereçamento</h1>
+        <div class="title-line"></div>
+      </div>
+      
+      <img src="img/projeto1.png" alt="Sistema de endereçamento em funcionamento" class="project-hero-img">
+      
+      <div class="project-body glass-panel">
+        <h3>Apresentação do Projeto</h3>
+        <p>O <strong>Sistema de Endereçamento e Cadastro de Produtos</strong> foi idealizado e desenvolvido para solucionar um dos maiores gargalos logísticos: a localização rápida e precisa de itens armazenados em galpões de distribuição e estoques comerciais.</p>
+        
+        <p>A ferramenta centraliza o registro do produto juntamente com suas coordenadas físicas de armazenamento (Corredor, Prateleira, Nível/Pátio). Isso reduz drasticamente o tempo de "picking" (separação de pedidos) e evita perda de inventário por peças extraviadas ou armazenadas incorretamente.</p>
+        
+        <h3>Principais Funcionalidades</h3>
+        <ul>
+          <li><strong>Cadastro Centralizado:</strong> Interface amigável para registro e atualização instantânea dos itens estocados.</li>
+          <li><strong>Geração de Códigos de Alocação:</strong> Geração automatizada da posição exata com base nas regras do galpão logístico.</li>
+          <li><strong>Busca Rápida:</strong> Motor de busca por nome, SKU, ou categoria que devolve em milissegundos o trajeto/posição da mercadoria.</li>
+          <li><strong>Dashboard Administrativo:</strong> Monitoramento de espaços livres, níveis críticos de ocupação e histórico de movimentações.</li>
+        </ul>
+        
+        <h3>Impacto e Resultados</h3>
+        <p>Esta solução de software automatizou processos que, anteriormente, dependiam de planilhas complexas e falhas humanas. A implantação do sistema representou um ganho estimado de produtividade e uma diminuição notável de perdas de produtos associadas à falha de estocagem, melhorando o giro do inventário e garantindo eficiência operacional de ponta-a-ponta.</p>
+      </div>
+      
+      <div style="text-align: center; margin-top: 50px;">
+        <a href="index.html#projetos" class="btn btn-primary"><i class="fa-solid fa-circle-arrow-left"></i> Voltar para Projetos</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; <span id="current-year"></span> Nilson Santos. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

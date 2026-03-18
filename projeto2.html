@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel de Produtividade | Nilson Santos</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Estilos específicos para a página do projeto */
+    .project-header {
+      padding-top: 150px;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .project-hero-img {
+      width: 100%;
+      border-radius: 20px;
+      margin-bottom: 40px;
+      box-shadow: var(--glass-shadow);
+      border: 1px solid var(--glass-border);
+    }
+    .project-body {
+      padding: 40px;
+      font-size: 1.15rem;
+      line-height: 1.8;
+      color: var(--text-muted);
+    }
+    .project-body h3 {
+      color: var(--text-main);
+      font-size: 1.8rem;
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+    .project-body ul {
+      list-style: disc inside;
+      margin-bottom: 20px;
+      margin-left: 20px;
+    }
+    .back-btn {
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Background Blobs -->
+  <div class="bg-shape shape-1"></div>
+  <div class="bg-shape shape-2"></div>
+
+  <header class="header">
+    <div class="header-container">
+      <a href="index.html" class="logo">NS<span>.</span></a>
+      <div class="header-actions">
+        <a href="index.html" class="btn btn-outline" style="padding: 8px 16px; font-size: 0.9rem;">
+          <i class="fa-solid fa-arrow-left"></i> Voltar
+        </a>
+        <button id="theme-toggle" class="theme-btn" aria-label="Alternar tema">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section project-detail reveal">
+      <div class="project-header">
+        <div class="projeto-tags" style="justify-content: center; margin-bottom: 20px;">
+          <span class="tag">Dashboard</span>
+          <span class="tag">Data Analysis</span>
+          <span class="tag">Power BI</span>
+        </div>
+        <h1 class="section-title">Painel de Produtividade</h1>
+        <div class="title-line"></div>
+      </div>
+      
+      <img src="img/projeto2.png" alt="Dashboard do Painel de Produtividade em tela cheia" class="project-hero-img">
+      
+      <div class="project-body glass-panel">
+        <h3>Apresentação do Projeto</h3>
+        <p>O <strong>Painel Interativo de Produtividade e Desempenho</strong> é uma solução completa de Business Intelligence (BI) construída integralmente no Microsoft Power BI. O foco deste painel é fornecer métricas visuais cruciais em tempo real para equipes de gestão, permitindo uma tomada de decisão ágil, orientada a dados concretos e objetivos.</p>
+        
+        <p>Estruturado de maneira a conectar múltiplas fontes de dados departamentais, o dashboard transforma volumes massivos e desorganizados de informações diárias em exibições limpas, filtráveis e de alto impacto visual. Em suma, o painel traduz os bastidores complexos da corporação para um panorama compreensível num piscar de olhos.</p>
+        
+        <h3>Desafios e Funcionalidades Técnicas</h3>
+        <ul>
+          <li><strong>ETL Avançado (Power Query):</strong> Extração e limpeza de dados de sistemas ERP obsoletos e fontes de dados híbridas (SQL Server e planilhas integradas do Excel). Modelagem Star-schema perfeita para máxima performance.</li>
+          <li><strong>Análise Expressiva (Métricas DAX):</strong> Criação de medidas de inteligência de tempo poderosas (Year-over-Year, Month-over-Month), rastreamento de SLA e cálculos de taxa de conversão em cascata.</li>
+          <li><strong>Design UI/UX no BI:</strong> Foi aplicada uma paleta de cores harmoniosa, garantindo alta acessibilidade e legibilidade. A interface permite que os diretores cliquem e isolem um cenário produtivo com poucos cliques (drill-through).</li>
+          <li><strong>Gestão de Acessos (RLS):</strong> Segurança implementada em nível de linha, baseada nos cargos de usuário; visando privacidade de informações entre setores.</li>
+        </ul>
+        
+        <h3>O Impacto para os Usuários</h3>
+        <p>Com a implantação dessa rotina analítica automatizada, o tempo para levantamentos produtivos que antes devorava horas dos analistas foi reduzido para meros segundos, promovendo engajamento assertivo em processos que efetivamente exigiam ajustes e atenção diretiva imediata. A ferramenta provou-se essencial nas reuniões dinâmicas de fechamento mensal.</p>
+      </div>
+      
+      <div style="text-align: center; margin-top: 50px;">
+        <a href="index.html#projetos" class="btn btn-primary"><i class="fa-solid fa-circle-arrow-left"></i> Voltar para Projetos</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; <span id="current-year"></span> Nilson Santos. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
